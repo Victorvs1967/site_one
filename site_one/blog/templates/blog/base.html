@@ -1,13 +1,16 @@
+{% load boostrap4 %}
+{% bootstrap_css %}
+
 {% load static %}
 <!DOCTYPE html>
 <html>
     <head>
-        <title>{% block title %}{% end block %}</title>
-        <link href="{% static "cdd/blog.css" %}" rel="stylesheet">
+        <title>{% block title %}{% endblock %}</title>
+        <!-- <link href="{% static "cdd/blog.css" %}" rel="stylesheet"> -->
     </head>
     <body>
         <div id="content">
-            {% block content %}{% end block %}
+            {% block content %}{% endblock %}
         </div>
         <div id="sidebar">
             <h2>My Blog</h2>
